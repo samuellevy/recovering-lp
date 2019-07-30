@@ -30,8 +30,7 @@ export const Content = styled.section``;
 export const Block = styled.article`
   display: flex;
   flex-wrap: nowrap;
-  padding: ${props => props.padding && props.padding}px 0
-    ${props => props.padding && props.padding - 15}px;
+  padding: ${props => props.padding && props.padding}px 0 ${props => props.padding && props.padding - 15}px;
 `;
 
 export const LeftBlock = styled.div`
@@ -39,9 +38,15 @@ export const LeftBlock = styled.div`
   width: 50%;
 `;
 export const RightBlock = styled.div`
-  background-color: darkblue;
   min-height: 100px;
   width: 50%;
+  position: relative;
+`;
+
+export const FloorImg = styled.img`
+  position: absolute;
+  top: -337px;
+  right: 0;
 `;
 
 export const TitleBlock = styled.div`

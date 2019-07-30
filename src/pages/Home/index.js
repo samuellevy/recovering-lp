@@ -1,23 +1,5 @@
 import React, { Component } from "react";
-import {
-  Container,
-  Header,
-  Banner,
-  Logo,
-  Content,
-  Block,
-  LeftBlock,
-  RightBlock,
-  TitleBlock,
-  Title,
-  Subtitle,
-  Text,
-  ProductsBox,
-  ProductItem,
-  ProductNameBox,
-  ProductType,
-  ProductName
-} from "./styles";
+import { Container, Header, Banner, Logo, Content, Block, LeftBlock, RightBlock, TitleBlock, Title, Subtitle, Text, ProductsBox, ProductItem, ProductNameBox, ProductType, ProductName, FloorImg } from "./styles";
 
 import bannerImg from "../../assets/images/banner.png";
 import logoImg from "../../assets/images/logo.png";
@@ -37,7 +19,7 @@ export default class Home extends Component {
         </Header>
 
         <Content>
-          <Block padding={70}>
+          <Block padding={90}>
             <LeftBlock>
               <TitleBlock>
                 <Title>Expertise</Title>
@@ -54,7 +36,9 @@ export default class Home extends Component {
                 você cobrir o seu espaço de qualidade.
               </Text>
             </LeftBlock>
-            <RightBlock>b</RightBlock>
+            <RightBlock>
+              <FloorImg src={enfeiteImg} alt="" />
+            </RightBlock>
           </Block>
 
           <Block>
